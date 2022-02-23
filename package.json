@@ -1,0 +1,31 @@
+{
+    "name": "test-task",
+    "version": "0.0.1",
+    "description": "Test task for a Back-End Developer position interview",
+    "scripts": {
+        "start": "node-dev ./build/index.js",
+        "build": "tsc",
+        "dev": "npm run-script build && concurrently \"tsc -w\" \"npm start\""
+    },
+    "license": "ISC",
+    "dependencies": {
+        "@types/koa-bodyparser": "^4.3.0",
+        "dotenv": "^8.2.0",
+        "koa": "^2.13.1",
+        "koa-bodyparser": "^4.3.0",
+        "koa-logger": "^3.2.1",
+        "koa-router": "^10.0.0",
+        "mongoose": "5.11.15",
+        "node-input-validator": "^4.4.0"
+    },
+    "devDependencies": {
+        "@types/koa": "^2.13.1",
+        "@types/koa-logger": "^3.1.1",
+        "@types/koa-router": "^7.4.1",
+        "@types/node": "^14.14.34",
+        "concurrently": "^6.0.0",
+        "mongodb-memory-server": "^6.9.6",
+        "node-dev": "^6.4.0",
+        "typescript": "^4.2.3"
+    }
+}
